@@ -585,7 +585,7 @@ button {
 
 .home-text p {
    font-size: 16px;
-   margin: 0 0 30px;
+   padding-bottom: 20px;
 }
 
 .home-img,
