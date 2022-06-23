@@ -1,235 +1,440 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Ridho Aulia Mahqoma Angkat | Web Designer &amp; Front End Developer</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Ridho Aulia Mahqoma Angkat &mdash; Web Developer | Portfolio Website</title>
 </head>
 
-<body class="is-preload">
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="profile container">
+    <!-- Theme button -->
+    <!-- <i class="ri-moon-line change-theme" id="theme-button"> </i> -->
 
-  <!-- Header -->
-  <header id="header">
-    <div class="inner">
-      <a href="./index.html" class="image avatar"><img src="images/me.jpg" alt="avatar" /></a>
-      <h1>
-        <strong>Ridho Aulia Mahqoma Angkat</strong> <br />
-        Web Designer & Front End Developer
-      </h1>
+    <div class="profile__container grid">
+      <div class="profile__data">
+        <div class="profile__border">
+          <div class="profile__perfil">
+            <img src="assets/img/me-2.png" alt="">
+          </div>
+        </div>
+
+        <h2 class="profile__name">Ridho Aulia Mahqoma Angkat</h2>
+        <h3 class="profile__profession">Web Developer</h3>
+
+        <ul class="profile__social">
+          <a href="https://www.instagram.com/hexodaa_/" target="_blank" class="profile__social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ridhoauliama/" target="_blank" class="profile__social-link">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <a href="https://github.com/ridhoauliama/" target=" _blank" class="profile__social-link">
+            <i class="ri-github-line"></i>
+          </a>
+        </ul>
+      </div>
+
+      <div class="profile__info-grid">
+        <div class="profile__info-group">
+          <!-- <h3 class="profile__info-number"></h3> -->
+          <p class="profile__info-description">
+            I'm really interested in Technology & solving technical problems. <br>
+            I work as a Freelance Web Developer. I loved to learn new things and share positive things, be it technology or something else. <br>
+            So, let's discuss with me.
+            <!-- I'm really interested in design & development a website/web apps. <br> I loved to learn a new things especially technologies is related on web development. <br> You can share anything with me be it technologies or something else. <br> Let's discuss with me.  -->
+          </p>
+        </div>
+      </div>
+
+      <div class="profile__buttons">
+        <a download="" href="assets/pdf/CV - Ridho Aulia Mahqoma Angkat.pdf" class="button button__small" data-toggle="tooltip" data-placement="bottom" title="CV - Ridho Aulia Mahqoma Angkat">
+          Download CV
+          <i class="ri-download-line"></i>
+        </a>
+
+        <div class="profile__buttons-small">
+          <a href="https://api.whatsapp.com/send?phone=6283898464874" target="_blank" class="button button__small button__gray" data-toggle="tooltip" data-placement="bottom" title="WhatsApp">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+          <a href="mailto:ridhoauliam.a@gmail.com" target="_blank" class="button button__small button__gray" data-toggle="tooltip" data-placement="bottom" title="Send me an email">
+            <i class="ri-send-plane-line"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Main -->
-  <div id="main">
-
-    <!-- One -->
-    <section id="one">
-      <header class="major">
-        <h2>Hi, I'm Ridho Aulia Mahqoma Angkat</h2>
-      </header>
-      <p style="text-align: justify;">
-        I work as <strong>Web Designer & Front End Developer.</strong> I'm really interested in design & development a website/web apps. I loved to learn a new things especially technologies is related on front end developer. You can share anything with me be it technologies or something else. <br>
-        Let's discuss with me.
-      </p>
-      <ul class="actions">
-        <li><a href="./resume/CV - Ridho Aulia Mahqoma Angkat.pdf" class="button primary small" download="CV - Ridho Aulia Mahqoma Angkat">Download CV</a></li>
-        <li><a href="https://wa.me/6283898464874" class="button small" target="_blank"> Conctact me</a></li>
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <section class="filters container">
+      <!--=============== FILTERS TABS ===============-->
+      <ul class="filters__content">
+        <button class="filters__button filter-tab-active" data-target="#projects">
+          Projects
+        </button>
+        <button class="filters__button" data-target="#skills">
+          Skills
+        </button>
       </ul>
-    </section>
 
-    <section id="about">
-      <h2>About me</h2>
-      <p style="text-align: justify;">I've intermediate level of experience in design and development knowledge, Motivated with 3 years work experiences which is calculated based on
-        the start i build my first project. I build more than 10++ Web-Based Application with different system built in, also some web pages of Blog, Company Profile, and
-        Personal. Dedicated and Fully-committed to designing and developing with internal drive to deliver. <br>
-        Last but not least, I wanna to be honest about my self. I'm an introvert who doesn't really like crowds. Therefore I prefer to work from home
-        (Remote), but if I am required to work on site, I really appreciate you as the employer, If I am allowed to work in a quiet room where there are
-        only a few people as a team or on my own.</p>
-      <div class="row">
-        <div class="col-6 col-12-xsmall">
-          <h5>Programming Skills</h5>
-          <ul class="alt">
-            <li>HTML5, CSS3, JavaScript, SASS, PHP</li>
-          </ul>
-          <h5>Tools/Technologies</h5>
-          <ul class="alt">
-            <li>VueJs, CodeIgniter, Laravel, Bootstrap, Chrome DevTools, Npm Package manager, Git Version Control </li>
-          </ul>
+      <div class="filters__sections">
+        <!--=============== PROJECTS ===============-->
+        <div class="projects__content grid filters__active" data-content id="projects">
+          <article class="projects__card">
+            <img src="assets/img/portfolio/dss.png" alt="Project-1" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web Application</span>
+                <h3 class="projects__title">Decision Support System - Penentuan Kelayakan Penerimaan Bantuan</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/movies-api.png" alt="Project-3" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web Application</span>
+                <h3 class="projects__title">Movies - API</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/ep.png" alt="Project-2" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web Application</span>
+                <h3 class="projects__title">Expert System - Anxiety Disorder</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/costcenter.png" alt="Project-3" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web Application</span>
+                <h3 class="projects__title">Cost Center Application</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/beats.png" alt="Landing Pages Beats" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web Design (Landing Pages)</span>
+                <h3 class="projects__title">Beats - Headset Product</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/tasty.png" alt="Landing Pages Tasty" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web Design (Landing Pages)</span>
+                <h3 class="projects__title">Tasty - Start Up Restaurant</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/port1.png" alt="UI Design - Show Hide Password" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">UI Design</span>
+                <h3 class="projects__title">Show Hide Password</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/port2.png" alt="UI Design - Pricing Card" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">UI Design</span>
+                <h3 class="projects__title">Pricing Card</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/port3.png" alt="UI Design - Responsive Sidebar Submenu" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">UI Design</span>
+                <h3 class="projects__title">Responsive Sidebar With Submenu</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/port4.png" alt="UI Design - Animated Pop-up Modal" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">UI Design</span>
+                <h3 class="projects__title">Animated Pop-up Modal</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/port5.png" alt="UI Design - Minimalis Clock Design" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">UI Design</span>
+                <h3 class="projects__title">Minimalis Clock Design</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/port6.png" alt="UI Design - Responsive Card Neon Glass" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">UI Design</span>
+                <h3 class="projects__title">Responsive Card Neon Glass</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/port7.png" alt="UI Design - Bottom Navigation" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">UI Design</span>
+                <h3 class="projects__title">Bottom Navigation</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img src="assets/img/portfolio/port8.png" alt="UI Design - Accordion" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">UI Design</span>
+                <h3 class="projects__title">Accordion</h3>
+                <a href="#" class="projects__button button button__small" data-toggle="tooltip" data-placement="bottom" title="Visit Link">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
         </div>
-        <div class="col-6 col-12-xsmall">
-          <h5>Languages Skills</h5>
-          <ul class="alt">
-            <li>Bahasa Indonesia & Bahasa Inggris</li>
-          </ul>
+
+        <!--=============== SKILLS ===============-->
+        <div class="skills__content grid" data-content id="skills">
+          <div class="skills__area">
+            <h3 class="skills__title">Frontend Development</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__level">Advanced</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Sass</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">VueJS</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Bootstrap</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Rest API</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__area">
+            <h3 class="skills__title">Backend Development</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">PHP</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">MySQL</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">CodeIgniter</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Laravel</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
-
     </section>
+  </main>
 
-    <!-- Two -->
-    <section id="two">
-      <h2>My Recent Works</h2>
-      <div class="row">
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/beats.png" class="image fit thumb">
-            <img src="images/portfolio/beats.png" alt="Portfolio-1" height="350" />
-          </a>
-          <h3>Beats - Landing Pages Product Headset</h3>
-          <p>Used : HTML5, CSS3, JavaScript, SASS. </p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/tasty.png" class="image fit thumb">
-            <img src="images/portfolio/tasty.png" alt="Portfolio-2" height="350" />
-          </a>
-          <h3>Tasty - Landing Pages Start Up Restaurant</h3>
-          <p>Used : HTML5, CSS3, JavaScript, SASS.</p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/costcenter.png" class="image fit thumb">
-            <img src="images/portfolio/costcenter.png" alt="Portfolio-3" />
-          </a>
-          <h3>Cost Center - Web Application</h3>
-          <p>Used : HTML5, CSS3, JavaScript, PHP, Bootstrap, CodeIgniter, MySQL</p>
-          <p>Role : Front-End </p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/Freelance-1.png" class="image fit thumb">
-            <img src="images/portfolio/Freelance-1.png" alt="Portfolio-4" />
-          </a>
-          <h3>Anxiety Disorder - Expert System</h3>
-          <p>Used : HTML5, CSS3, JavaScript, PHP, Bootstrap, CodeIgniter, MySQL</p>
-          <p>Role : Front-End </p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/port1.png" class="image fit thumb">
-            <img src="images/portfolio/port1.png" alt="Portfolio-5" />
-          </a>
-          <h3>Show Hide Password - UI Design</h3>
-          <p>Used : HTML5, CSS3, JavaScript</p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/port2.png" class="image fit thumb">
-            <img src="images/portfolio/port2.png" alt="Portfolio-6" />
-          </a>
-          <h3>Pricing Card - UI Design</h3>
-          <p>Used : HTML5, CSS3, JavaScript</p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/port3.png" class="image fit thumb">
-            <img src="images/portfolio/port3.png" alt="Portfolio-7" />
-          </a>
-          <h3>Responsive Sidebar Menu - UI Design </h3>
-          <p>Used : HTML5, CSS3, JavaScript. </p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/port4.png" class="image fit thumb">
-            <img src="images/portfolio/port4.png" alt="Portfolio-8" />
-          </a>
-          <h3>Animated Pop-Up Modal</h3>
-          <p>Used : HTML5, CSS3, JavaScript.</p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/port5.png" class="image fit thumb">
-            <img src="images/portfolio/port5.png" alt="Portfolio-9" />
-          </a>
-          <h3>Minimalist Clock - UI Design</h3>
-          <p>Used : HTML5, CSS3, JavaScript. </p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/port6.png" class="image fit thumb">
-            <img src="images/portfolio/port6.png" alt="Portfolio-10" />
-          </a>
-          <h3>Responsive Card Neon Glass - UI Design</h3>
-          <p>Used : HTML5, CSS3, JavaScript. </p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/port7.png" class="image fit thumb">
-            <img src="images/portfolio/port7.png" alt="Portfolio-11" />
-          </a>
-          <h3>Bottom Navigation - UI Design</h3>
-          <p>Used : HTML5, CSS3, JavaScript</p>
-        </article>
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="images/portfolio/port8.png" class="image fit thumb">
-            <img src="images/portfolio/port8.png" alt="Portfolio-12" />
-          </a>
-          <h3>Accordion - UI Design</h3>
-          <p>Used : HTML5, CSS3, JavaScript</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Three -->
-    <section id="three">
-      <h2>Get In Touch!</h2>
-      <p>Do you have any New Projects? Contact me now!</p>
-      <div class="row">
-        <div class="col-12 col-12-xsmall">
-          <ul class="labeled-icons">
-            <li>
-              <h3 class="icon solid fa-home">
-                <span class="label">Address</span>
-              </h3>
-              Dusun I Gg. B.O, Desa Tanjung Morawa A, Kec. Tanjung Morawa, Kab. Deli Serdang, Sumatera Utara (20362)
-            </li>
-            <li>
-              <h3 class="icon brands fa-whatsapp">
-                <span class="label">WhatsApp</span>
-              </h3>
-              <a href="https://wa.me/6283898464874" target="_blank"> +62 838-9846-4874</a>
-            </li>
-            <li>
-              <h3 class="icon solid fa-envelope">
-                <span class="label">Email</span>
-              </h3>
-              <a href="mailto:">ridhoauliam.a@gmail.com</a>
-            </li>
-          </ul>
-        </div>
-    </section>
-
-  </div>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <div class="inner">
-      <ul class="icons">
-        <li>
-          <a href="https://www.instagram.com/hexodaa_/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a>
-        </li>
-        <li>
-          <a href="https://github.com/ridhoauliama" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/ridhoauliama/" class="icon brands fa-linkedin-in " target="_blank"><span class="label">Linked In</span></a>
-        </li>
-        <li>
-          <a href="https://wa.me/6283898464874" class="icon brands fa-whatsapp" target="_blank"><span class="label">WhatsApp Messenger</span></a>
-        </li>
-      </ul>
-      <ul class="copyright">
-        <li>&copy; Copyright
-          <script type="text/javascript">
-            document.write(new Date().getFullYear());
-          </script>
-          &mdash; Portfolio Website
-        </li>
-        <br>
-        <a href="./"> Ridho Aulia Mahqoma Angkat</a>
-      </ul>
-    </div>
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer__copy">
+      &#169; Ridho Aulia Mahqoma Angkat. All rigths reserved
+    </span>
   </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.poptrox.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
 
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

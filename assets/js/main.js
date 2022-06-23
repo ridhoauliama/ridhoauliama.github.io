@@ -1,98 +1,72 @@
-(function ($) {
-  var $window = $(window),
-    $body = $('body'),
-    $header = $('#header'),
-    $footer = $('#footer'),
-    $main = $('#main'),
-    settings = {
-      // Parallax background effect?
-      parallax: true,
-      // Parallax factor (lower = more intense, higher = less intense).
-      parallaxFactor: 20,
-    };
+/*=============== FILTERS TABS ===============*/
+const tabs = document.querySelectorAll('[data-target]'),
+  tabContents = document.querySelectorAll('[data-content]');
 
-  // Breakpoints.
-  breakpoints({
-    xlarge: ['1281px', '1800px'],
-    large: ['981px', '1280px'],
-    medium: ['737px', '980px'],
-    small: ['481px', '736px'],
-    xsmall: [null, '480px'],
-  });
+tabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.target);
 
-  // Play initial animations on page load.
-  $window.on('load', function () {
-    window.setTimeout(function () {
-      $body.removeClass('is-preload');
-    }, 100);
-  });
-
-  // Touch?
-  if (browser.mobile) {
-    // Turn on touch mode.
-    $body.addClass('is-touch');
-
-    // Height fix (mostly for iOS).
-    window.setTimeout(function () {
-      $window.scrollTop($window.scrollTop() + 1);
-    }, 0);
-  }
-
-  // Footer.
-  breakpoints.on('<=medium', function () {
-    $footer.insertAfter($main);
-  });
-
-  breakpoints.on('>medium', function () {
-    $footer.appendTo($header);
-  });
-
-  // Header.
-  // Parallax background.
-  // Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
-  if (browser.name == 'ie' || browser.mobile) settings.parallax = false;
-
-  if (settings.parallax) {
-    breakpoints.on('<=medium', function () {
-      $window.off('scroll.strata_parallax');
-      $header.css('background-position', '');
+    tabContents.forEach((tc) => {
+      tc.classList.remove('filters__active');
     });
+    target.classList.add('filters__active');
 
-    breakpoints.on('>medium', function () {
-      $header.css('background-position', 'left 0px');
-
-      $window.on('scroll.strata_parallax', function () {
-        $header.css(
-          'background-position',
-          'left ' +
-            -1 * (parseInt($window.scrollTop()) / settings.parallaxFactor) +
-            'px'
-        );
-      });
+    tabs.forEach((t) => {
+      t.classList.remove('filter-tab-active');
     });
-
-    $window.on('load', function () {
-      $window.triggerHandler('scroll');
-    });
-  }
-
-  // Main Sections: Two.
-  // Lightbox gallery.
-  $window.on('load', function () {
-    $('#two').poptrox({
-      caption: function ($a) {
-        return $a.next('h3').text();
-      },
-      overlayColor: '#2c2c2c',
-      overlayOpacity: 0.85,
-      popupCloserText: '',
-      popupLoaderText: '',
-      selector: '.work-item a.image',
-      usePopupCaption: true,
-      usePopupDefaultStyling: false,
-      usePopupEasyClose: false,
-      usePopupNav: true,
-      windowMargin: breakpoints.active('<=small') ? 0 : 50,
-    });
+    tab.classList.add('filter-tab-active');
   });
-})(jQuery);
+});
+
+/*=============== DARK LIGHT THEME ===============*/
+const themeButton = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+const iconTheme = 'ri-sun-line';
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line';
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](
+    iconTheme
+  );
+}
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+  // Add or remove the dark / icon theme
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  // We save the theme and the current icon that the user chose
+  localStorage.setItem('selected-theme', getCurrentTheme());
+  localStorage.setItem('selected-icon', getCurrentIcon());
+});
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+});
+
+sr.reveal(`.profile__border`);
+sr.reveal(`.profile__name`, { delay: 500 });
+sr.reveal(`.profile__profession`, { delay: 600 });
+sr.reveal(`.profile__social`, { delay: 700 });
+sr.reveal(`.profile__info-group`, { interval: 100, delay: 700 });
+sr.reveal(`.profile__buttons`, { delay: 800 });
+sr.reveal(`.filters__content`, { delay: 900 });
+sr.reveal(`.filters`, { delay: 1000 });
